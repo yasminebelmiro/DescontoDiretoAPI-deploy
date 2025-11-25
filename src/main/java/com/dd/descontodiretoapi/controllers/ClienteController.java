@@ -39,6 +39,7 @@ public class ClienteController {
                     )
             }
     )
+
     @GetMapping("/all")
     public ResponseEntity<List<Cliente>> getAllClientes() {
         return ResponseEntity.status(HttpStatus.OK).body(clienteService.findAll());
